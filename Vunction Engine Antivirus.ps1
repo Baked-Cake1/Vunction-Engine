@@ -1,4 +1,4 @@
-# Vunction Engine by BakedCake wih source code explained.
+# Vunction Engine by BakedCake with source code explained.
 
 # Path to configuration files
 $configDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -101,8 +101,8 @@ while ($true) {
     # Prompt user for directory to scan
     $directoryToScan = Read-Host "Enter the directory to scan (e.g., C:\Users\YourName\Documents)"
 
-    # Get all files in the directory and subdirectories
-    $allFiles = Get-ChildItem -Path $directoryToScan -Recurse -File
+    # Get all files in the directory and subdirectories (including hidden files)
+    $allFiles = Get-ChildItem -Path $directoryToScan -Recurse -File -Force
     $totalFiles = $allFiles.Count
     $totalSizeMB = ($allFiles | Measure-Object -Property Length -Sum).Sum / 1MB
 
@@ -134,8 +134,8 @@ while ($true) {
         Write-Host "Progress: $percentComplete% | Files left: $($totalFiles - $totalFilesScanned) | Remaining size: $([math]::Round($remainingSizeMB, 2)) MB`n"
     }
 
-    # Scan folders (for counting purposes)
-    $totalFoldersScanned = (Get-ChildItem -Path $directoryToScan -Recurse -Directory).Count
+    # Scan folders (for counting purposes, including hidden folders)
+    $totalFoldersScanned = (Get-ChildItem -Path $directoryToScan -Recurse -Directory -Force).Count
 
     # Display summary
     Write-Host "`nScan completed!"

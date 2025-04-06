@@ -1,9 +1,14 @@
 # Hello!
 
-Another new release here. This Powershell project is still in beta. So be aware of any occuring bugs.
+A new project here! Just finished development. This is a Powershell-powered antimalware. It's very straightforward but it's only a scanner for now. I might plan on adding Real-Time Protection. This is only a basic project for now. *Vunction Engine* was originally a VirusTotal engine, which was used to automate making comments on the maliciousness of a certain file on the platform, now it's evolved into a ***real*** project and I'm proud of it.
 
-Most likely, you will need help on how to set it up. Go [here](https://vunction-docs.fandom.com/wiki/Vunction_Engine_Wiki)
+# Next update in...
+**2 days (Update 2.1, MAJOR UPDATE)**
 
-Thanks!
-
-Go to issues for known bugs and how to fix them.
+# New update includes...
+* Scanning the whole PC (could take around 30 minutes)
+* Scanning memory first **if scanning the whole PC.**
+* Updated lists and got rid of the old, outdated one.
+* Added more lists - about 6 from the internet of malware hashes from MalwareBazaar and others.
+* Includes a reason on why the file is malicious (in beta, it'll just say 'Malicious' from a bug)
+* Much more easier to run.

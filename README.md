@@ -3,7 +3,7 @@
 A new project here! Just finished development. This is a Powershell-powered antimalware. It's very straightforward but it's only a scanner for now. I might plan on adding Real-Time Protection. This is only a basic project for now. *Vunction Engine* was originally a VirusTotal engine, which was used to automate making comments on the maliciousness of a certain file on the platform, now it's evolved into a ***real*** project and I'm proud of it.
 
 # Next update in...
-**2 days (Update 2.1, MAJOR UPDATE)**
+**1 day (Update 2.1, MAJOR UPDATE)**
 
 # New update includes...
 * Scanning the whole PC (could take around 30 minutes)
